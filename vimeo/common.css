@@ -1,0 +1,10 @@
+html {overflow:auto;}
+body {font-family: Georgia;font-size:12px;padding:1px;margin:0px;overflow:auto;}
+#vpContainer {width:400px;height:300px;padding: 0px;margin:0px;overflow:hidden;float:left;background: #cfcfcf;}
+#videoPlayer {padding:0px;margin:0px;height:300px;}
+#videoItem {clear:both;display:none;}
+#videos {list-style-type:none;padding:0px;margin:0px;width:100%;}
+#videoList {height:300px;overflow:hidden;overflow-y:auto;float:left;background: #efefef;width:100%;}
+#videos li {list-style-type:none;white-space:normal;float:left;width:350px;}
+#videos a {text-decoration: none;color: blue;}
+#plname,#plw {height:18px;width:400px;overflow:hidden;padding:0px;width:100%;background: olive;color: white;}

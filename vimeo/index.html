@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>Vimeo Moongaloop Player</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="swfobject.js"></script>
+        <script type="text/javascript" src="vimeo.js" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="common.css" />
+    </head>
+    <body>
+        <table border="0" width="100%" cellpadding="1" cellspacing="0">
+            <tr><td width="400" valign="top">
+                    <div id="plname">Please wait while loading the video...</div>
+                    <div id="vpContainer">
+                        <div id="videoPlayer">
+                            <div style="text-align:center;padding:80px;">
+                                <h2>Get Adobe Flash player</h2><br/>
+                                <a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" border="0" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td width="*%" valign="top">
+                    <div id="plw">Please wait while getting the list of videos...</div>
+                    <div id="videoList">
+                        <ul id="videos" />
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div id="videoItem">
+            <table width="100%" cellpadding="2" cellspacing="3">
+                <tr>
+                    <td width="60" valign="top"><a href='javascript:loadNewVideo(__videoId__,"__videoTitle__",true)'><img border="0" src="__imgname__" width="60" height="50" /></a></td>
+                    <td width="*%" valign="top"><a href='javascript:loadNewVideo(__videoId__,"__videoTitle__",true)'>__videoTitle__</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="plwGif" style="position: absolute;z-index:2;width:400px;height:50px;visibility:hidden;background:white;">
+            <div style="float:left;"><img src="wait.gif" border="0" alt=""/></div>
+            <div style="float:left;line-height:50px;padding:0 0 0 10px;"><h2>Please wait..</h2></div>
+        </div>
+        <script type="text/javascript" src="http://vimeo.com/api/v2/user2817894/videos.json?callback=loadVideos"> </script>
+    </body>
+</html>
